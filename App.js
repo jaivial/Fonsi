@@ -1,15 +1,15 @@
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity, ScrollView } from 'react-native';
 
 
 export default function App() {
  
 return (
-<View style={{ justifyContent: 'center', alignSelf: "center", marginVertical: 80 }}>
-
+<View style={{ justifyContent: 'center', alignSelf: "center", marginVertical: 0 }}>
+  <ScrollView>
         <Text style={{ fontSize: 45, fontWeight: "bold"}}>Calculadora</Text>
 
         <View style={{ marginTop: 5}}>
-          <View style={{ flexDirection: "row", marginBottom: 10, height: 70, width: 340, borderRadius: 4, borderWidth: 1 }}>
+          <View style={{ flexDirection: "row", marginBottom: 10, height: 80, width: 340, borderRadius: 4, borderWidth: 1 }}>
             <Text style={{ fontSize: 50, textAlign: "right", flex: 1 }}>Hola</Text>
           </View>
           <View style={{ flexDirection: "row" }}>
@@ -111,6 +111,7 @@ return (
             </View>
           </View>
         </View>
+        </ScrollView>
 
   </View>
 )
